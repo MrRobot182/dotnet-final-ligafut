@@ -1,0 +1,33 @@
+body {
+   background: #ededed;
+}
+
+.bg-img{
+    height: 74vh;
+    background-image: url(img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.head-text{
+    margin: auto auto;
+}
+
+.bg-custom-1 {
+    background: linear-gradient(90deg, rgba(92,166,199,1) 12%, rgba(43,161,118,1) 33%, rgba(67,130,68,1) 63%, rgba(0,47,75,1) 100%);
+}
+
+.bg-custom-2 {
+    background: linear-gradient(90deg, rgba(92,166,199,1) 12%, rgba(43,161,118,1) 33%, rgba(67,130,68,1) 63%, rgba(0,47,75,1) 100%);
+}
+
+.text-custom {
+    color: rgba(2,0,36,1);
+}
+
+
+main {
+    min-height: 73.8vh;
+}
+
