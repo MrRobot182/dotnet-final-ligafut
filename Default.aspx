@@ -6,8 +6,8 @@
             <div class="row h-100">
                 <div class="col-12 head-text">
                     <div class="text-center m-0 vh-100 d-flex flex-column justify-content-center text-light">
-                        <h1 class="display-4">Fernando Gabriel Sánchez López</h1>
-                        <p class="lead">Ingeniería del conocimiento: 3NM71</p>                        
+                        <h1 class="font-weight-bold">¡Administra fácilmente lo que ocurre en la liga de fútbol!</h1>
+                        <p class="lead">Jugadores, equipos y partidos</p>                        
                     </div>
                 </div>
             </div>

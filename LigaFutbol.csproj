@@ -67,16 +67,125 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="equipos\consultar.aspx" />
+    <Content Include="equipos\insertar.aspx" />
+    <Content Include="estadisticas\asistentes.aspx" />
+    <Content Include="estadisticas\fairplay.aspx" />
+    <Content Include="estadisticas\goleadores.aspx" />
+    <Content Include="estadisticas\jugadores.aspx" />
+    <Content Include="estadisticas\mejorDefensiva.aspx" />
+    <Content Include="estadisticas\mejorOfensiva.aspx" />
+    <Content Include="estadisticas\tablageneral.aspx" />
+    <Content Include="jugadores\consultar.aspx" />
+    <Content Include="jugadores\insertar.aspx" />
+    <Content Include="partidos\consultar.aspx" />
+    <Content Include="partidos\insertar.aspx" />
     <Content Include="Web.config" />
     <Content Include="Default.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="equipos\consultar.aspx.cs">
+      <DependentUpon>consultar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="equipos\consultar.aspx.designer.cs">
+      <DependentUpon>consultar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="equipos\insertar.aspx.cs">
+      <DependentUpon>insertar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="equipos\insertar.aspx.designer.cs">
+      <DependentUpon>insertar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="estadisticas\asistentes.aspx.cs">
+      <DependentUpon>asistentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="estadisticas\asistentes.aspx.designer.cs">
+      <DependentUpon>asistentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="estadisticas\fairplay.aspx.cs">
+      <DependentUpon>fairplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="estadisticas\fairplay.aspx.designer.cs">
+      <DependentUpon>fairplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="estadisticas\goleadores.aspx.cs">
+      <DependentUpon>goleadores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="estadisticas\goleadores.aspx.designer.cs">
+      <DependentUpon>goleadores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="estadisticas\jugadores.aspx.cs">
+      <DependentUpon>jugadores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="estadisticas\jugadores.aspx.designer.cs">
+      <DependentUpon>jugadores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="estadisticas\mejorDefensiva.aspx.cs">
+      <DependentUpon>mejorDefensiva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="estadisticas\mejorDefensiva.aspx.designer.cs">
+      <DependentUpon>mejorDefensiva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="estadisticas\mejorOfensiva.aspx.cs">
+      <DependentUpon>mejorOfensiva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="estadisticas\mejorOfensiva.aspx.designer.cs">
+      <DependentUpon>mejorOfensiva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="estadisticas\tablageneral.aspx.cs">
+      <DependentUpon>tablageneral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="estadisticas\tablageneral.aspx.designer.cs">
+      <DependentUpon>tablageneral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jugadores\consultar.aspx.cs">
+      <DependentUpon>consultar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jugadores\consultar.aspx.designer.cs">
+      <DependentUpon>consultar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jugadores\insertar.aspx.cs">
+      <DependentUpon>insertar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jugadores\insertar.aspx.designer.cs">
+      <DependentUpon>insertar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="modelos\DB.cs" />
+    <Compile Include="modelos\Equipo.cs" />
+    <Compile Include="modelos\Estadisticas.cs" />
+    <Compile Include="modelos\Jugador.cs" />
+    <Compile Include="modelos\Partido.cs" />
+    <Compile Include="partidos\consultar.aspx.cs">
+      <DependentUpon>consultar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="partidos\consultar.aspx.designer.cs">
+      <DependentUpon>consultar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="partidos\insertar.aspx.cs">
+      <DependentUpon>insertar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="partidos\insertar.aspx.designer.cs">
+      <DependentUpon>insertar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Default.aspx.cs">
@@ -97,9 +206,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewController\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

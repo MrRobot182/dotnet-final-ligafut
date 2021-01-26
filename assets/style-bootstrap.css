@@ -2,8 +2,12 @@ body {
    background: #ededed;
 }
 
+.main {
+    min-height: 69.2vh;
+}
+
 .bg-img{
-    height: 74vh;
+    height: 73vh;
     background-image: url(img/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -25,9 +29,3 @@ body {
 .text-custom {
     color: rgba(2,0,36,1);
 }
-
-
-main {
-    min-height: 73.8vh;
-}
-
