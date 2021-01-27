@@ -218,5 +218,17 @@ namespace LigaFutbol
 
             dbo.Conn.Close();
         }
+
+        public DataSet NumeroJugador()
+        {
+            string query = "select id_jugador, numero + ' - ' + SUBSTRING(nombres,1,1) + '. ' + ap_pat + ' ' + ap_mat as 'nombre_completo' from jugadores where id_equipo='" + this.idEquipo.ToString() + "';";
+            return Consulta(query);
+        }
+
+        public DataSet Incidentes()
+        {
+            string query = "select * from incidentes";
+            return Consulta(query);
+        }
     }
 }

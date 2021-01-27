@@ -176,5 +176,12 @@ namespace LigaFutbol
 
             dbo.Conn.Close();
         }
+        public DataSet EquiposSinEnfrentar()
+        {
+            string query = "select id_equipo, nombre from equipos where id_equipo not in ('"+ this.id + "') and id_equipo not in(select id_equipo_visitante from partidos where id_equipo_local='" + this.id + "')  and id_equipo not in(select id_equipo_local from partidos where id_equipo_visitante = '" + this.id + "');";
+            return Consulta(query);            
+        }
+
+        
     }
 }

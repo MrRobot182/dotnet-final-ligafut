@@ -36,12 +36,12 @@ namespace LigaFutbol
         }
         public DataSet Goleadores()
         {
-            string query = "select SUBSTRING(jugadores.nombres, 1, 1) + '. ' + jugadores.ap_pat as Jugador,equipos.nombre as Equipo,estadisticas_jugador.goles as Goles from jugadores inner join equipos on jugadores.id_equipo=equipos.id_equipo inner join estadisticas_jugador on jugadores.id_jugador= estadisticas_jugador.id_jugador order by estadisticas_jugador.goles desc;";
+            string query = "select top 10 SUBSTRING(jugadores.nombres, 1, 1) + '. ' + jugadores.ap_pat as Jugador,equipos.nombre as Equipo,estadisticas_jugador.goles as Goles from jugadores inner join equipos on jugadores.id_equipo=equipos.id_equipo inner join estadisticas_jugador on jugadores.id_jugador= estadisticas_jugador.id_jugador order by estadisticas_jugador.goles desc;";
             return Consulta(query);
         }
         public DataSet Asistentes()
         {
-            string query = "select SUBSTRING(jugadores.nombres, 1, 1) + '. ' + jugadores.ap_pat as Jugador,equipos.nombre as Equipo,estadisticas_jugador.asistencias as Asistencias from jugadores inner join equipos on jugadores.id_equipo=equipos.id_equipo inner join estadisticas_jugador on jugadores.id_jugador=estadisticas_jugador.id_jugador order by estadisticas_jugador.asistencias desc;";
+            string query = "select top 10 SUBSTRING(jugadores.nombres, 1, 1) + '. ' + jugadores.ap_pat as Jugador,equipos.nombre as Equipo,estadisticas_jugador.asistencias as Asistencias from jugadores inner join equipos on jugadores.id_equipo=equipos.id_equipo inner join estadisticas_jugador on jugadores.id_jugador=estadisticas_jugador.id_jugador order by estadisticas_jugador.asistencias desc;";
             return Consulta(query);
         }
         public DataSet MejorAtaque()
@@ -62,6 +62,21 @@ namespace LigaFutbol
             return Consulta(query);
         }
 
+        public void Incidentes(int idPartido, int idIncidente, int idJugador, int minuto)
+        {
+            dbo.Conn.Open();
+
+            SqlCommand cmd = new SqlCommand("inserta_incidentes", dbo.Conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@idp", idPartido);
+            cmd.Parameters.AddWithValue("@idi", idIncidente);
+            cmd.Parameters.AddWithValue("@idj", idJugador);
+            cmd.Parameters.AddWithValue("@min", minuto);
+            cmd.ExecuteNonQuery();
+
+            dbo.Conn.Close();
+        }
+        
 
     }
     

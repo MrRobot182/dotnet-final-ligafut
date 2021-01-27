@@ -22,7 +22,6 @@
                 </div>
 
                 <div class="form-group">                     
-                    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
                     <asp:Label runat="server">Fecha</asp:Label>
                     <asp:Calendar ID="fecha" runat="server" Width="100%" ondayrender="Calendar_DayRender"></asp:Calendar>
                     <asp:Label ID="lbl2" runat="server" CssClass="text-danger" Text=""></asp:Label>                     

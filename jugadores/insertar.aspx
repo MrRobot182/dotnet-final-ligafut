@@ -17,7 +17,7 @@
 
             <div class="form-group">
                 <asp:Label runat="server">Nombre</asp:Label>
-                <asp:TextBox ID="txtNom" runat="server" CssClass="form-control text-uppercase"></asp:TextBox>
+                <asp:TextBox ID="txtNom" MaxLength="20" runat="server" CssClass="form-control text-uppercase"></asp:TextBox>
                 <asp:RequiredFieldValidator runat="server" id="reqNom" controltovalidate="txtNom" class="text-danger" errormessage="Ingrese nombre de jugador" />
                 <asp:RegularExpressionValidator id="regex1" runat="server" class="text-danger" 
                         errormessage="Ingrese un nombre valido" 
@@ -27,7 +27,7 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <asp:Label runat="server">Apellido paterno</asp:Label>
-                    <asp:TextBox ID="txtApp" runat="server" CssClass="form-control text-uppercase"></asp:TextBox>
+                    <asp:TextBox ID="txtApp" MaxLength="20" runat="server" CssClass="form-control text-uppercase"></asp:TextBox>
                     <asp:RequiredFieldValidator runat="server" id="reqApp" controltovalidate="txtApp" class="text-danger" errormessage="Ingrese apellido paterno" />
                     <asp:RegularExpressionValidator id="regex2" runat="server" class="text-danger" 
                             errormessage="Ingrese un apellido paterno valido" 
@@ -36,7 +36,7 @@
                 </div>
                 <div class="form-group col-md-6">
                     <asp:Label runat="server">Apellido materno</asp:Label>
-                    <asp:TextBox ID="txtApm" runat="server" CssClass="form-control text-uppercase"></asp:TextBox>
+                    <asp:TextBox ID="txtApm" MaxLength="20" runat="server" CssClass="form-control text-uppercase"></asp:TextBox>
                     <asp:RequiredFieldValidator runat="server" id="reqApm" controltovalidate="txtApm" class="text-danger" errormessage="Ingrese apellido paterno" />
                     <asp:RegularExpressionValidator id="regex3" runat="server" class="text-danger" 
                             errormessage="Ingrese un apellido materno valido" 

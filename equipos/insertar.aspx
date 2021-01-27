@@ -10,7 +10,7 @@
                 <asp:Label ID="lbl1" runat="server" CssClass="text-success" Text=""></asp:Label>                     
                 <div class="form-group">
                     <asp:Label runat="server">Nombre</asp:Label>
-                    <asp:TextBox ID="txtNom" runat="server" CssClass="form-control text-uppercase"></asp:TextBox>
+                    <asp:TextBox ID="txtNom" MaxLength="35" runat="server" CssClass="form-control text-uppercase"></asp:TextBox>
                     <asp:RequiredFieldValidator runat="server" id="reqNomE" controltovalidate="txtNom" class="text-danger" errormessage="Ingresa nombre de equipo" />
                     <asp:RegularExpressionValidator id="regex1" runat="server" class="text-danger" 
                         errormessage="Ingrese un nombre valido (solo letras y números)" 
